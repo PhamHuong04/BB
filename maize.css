@@ -91,7 +91,6 @@
 
 .sale-up .collection-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 .sale-up .collection-list .infor {
@@ -104,7 +103,7 @@
   position: relative;
   background-size: cover;
   width: 705px;
-  height: 545px;
+  height: 540px;
   margin: 30px 15px 60px;
 }
 .sale-up .collection-list .product1 {
@@ -147,9 +146,8 @@
 }
 .time .content {
   color: var(--dark-brown-text);
-  height: fit-content;
-  margin: auto auto;
   background-color: var(--orange);
+  padding: auto auto;
 }
 
 .product .price {
@@ -185,9 +183,6 @@
   height: fit-content;
 }
 
-.time .image {
-  height: fit-content;
-}
 .time .content .image img {
   transform: rotate(-1.62deg);
 }
@@ -428,11 +423,8 @@
 @media only screen and (max-width: 768px) {
   .header {
     background-image: url("./image/4459674-08 2.png");
-    height: 1000px;
-    width: 100%;
   }
   .header .content {
-    transform: translate(10%, 0);
     width: 100%;
     color: var(--brown);
     margin-left: 0;
@@ -453,7 +445,7 @@
     font-size: var(--body-text-size);
   }
   .benefits {
-    margin: 100px 20px;
+    margin: 30px 20px;
   }
   .benefits .benefit-list {
     flex-wrap: wrap;
@@ -475,17 +467,17 @@
   }
   .sale-up {
     background-color: var(--yellow);
-    padding: 0 0;
+    padding: 0 10px;
   }
   .sale-up .thanksgiving {
     margin-bottom: 30px;
-    font-family: var(--font-parisienne);
     font-size: var(--font-size-11xl);
-    color: var(--brown);
-    text-align: center;
   }
   .sale-up .collection-list .infor {
     padding: 50px 30px;
+  }
+  .sale-up .collection-list {
+    flex-wrap: wrap;
   }
   .sale-up .collection-list .title {
     font-size: var(--font-size-5xl);
@@ -494,8 +486,8 @@
     background-size: cover;
   }
   .sale-up .collection-list .product {
-    width: 345px;
-    height: 266px;
+    width: 100%;
+    height: 270px;
     margin: 10px 15px 15px;
   }
   .sale-up .collection {
@@ -510,10 +502,134 @@
     flex-wrap: wrap;
   }
   .time .image img {
-    width: 375px;
-    height: 247px;
+    width: 100%;
   }
   .time .content {
     padding: 20px;
+  }
+
+  .trending-product {
+    padding: 0 auto;
+    margin: 50px 0;
+  }
+  .trending-product .trending {
+    font-size: var(--font-size-11xl);
+  }
+
+  .trending-product .products {
+    font-size: var(--font-size-5xl);
+  }
+  .trending-product .product {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    height: fit-content;
+  }
+
+  .trending-product .product .image {
+    margin-bottom: 10px;
+    height: fit-content;
+  }
+  .trending-product .action {
+    margin: 30px 0 50px;
+  }
+  .trending-product .product .image img {
+    width: 100%;
+  }
+  .trending-product button {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+
+  .testimonials .title {
+    font-size: var(--font-size-11xl);
+  }
+
+  .testimonials .review .content {
+    font-size: var(--font-size-sm);
+    max-width: 100%;
+    margin: 10px 10% 30px;
+  }
+  .testimonials .author {
+    max-width: 80%;
+  }
+
+  .testimonials .review .name {
+    font-size: var(--font-size-sm);
+  }
+
+  .blogs {
+    margin: 50px 10%;
+  }
+
+  .blogs .our-latest {
+    font-size: var(--font-size-5xl);
+  }
+
+  .blogs .blog-text {
+    font-size: var(--font-size-11xl);
+  }
+
+  .blogs .blog {
+    width: 345px;
+    margin-bottom: 30px;
+  }
+
+  .blogs .image img {
+    width: 100%;
+  }
+
+  .blogs .blog .title {
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .blogs .blog .content {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .blogs .blog .discription {
+    font-size: var(--font-size-sm);
+    margin-bottom: 10px;
+  }
+
+  .blogs .blog .see-more {
+    padding: 10px 20px;
+    font-size: var(--font-size-sm);
+  }
+  .promotion {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .promotion .content {
+    padding: 50px 10px;
+  }
+
+  .promotion .promotion-text {
+    font-size: var(--font-size-5xl);
+  }
+
+  .promotion .content .title-your {
+    font-size: var(--font-size-11xl);
+  }
+
+  .promotion .discription {
+    font-size: var(--font-size-sm);
+    width: 100%;
+  }
+
+  .promotion .content button {
+    padding: 10px 20px;
+    font-size: var(--body-text-size);
+  }
+  .promotion .image {
+    width:678px;
+  }
+  .promotion .image img {
+    width: 100%;
+    height: 500px;
   }
 }
