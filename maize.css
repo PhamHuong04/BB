@@ -148,6 +148,8 @@
   color: var(--dark-brown-text);
   background-color: var(--orange);
   padding: auto auto;
+  width: 100% ;
+  height: fit-content;
 }
 
 .product .price {
@@ -181,6 +183,8 @@
   text-transform: capitalize;
   background-color: var(--white);
   height: fit-content;
+  margin: 68px auto;
+  width: 60%;
 }
 
 .time .content .image img {
@@ -506,6 +510,10 @@
   }
   .time .content {
     padding: 20px;
+  }
+  .time .box {
+    width: 100%;
+    margin: auto;
   }
 
   .trending-product {
