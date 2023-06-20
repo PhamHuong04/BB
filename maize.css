@@ -1,0 +1,441 @@
+.header {
+  background-image: url("./image/4459674-02 5.png");
+  height: 900px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+
+.header .content {
+  transform: translate(0, 50%);
+  margin-left: 10%;
+  width: 40%;
+  color: var(--brown);
+}
+
+.header .content .thanksgiving {
+  font-family: var(--font-parisienne);
+  font-size: 100px;
+}
+
+.header .content .sale-off-season {
+  font-size: var(--title-size);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.header .content .subheading {
+  color: var(--dark-brown-text);
+  margin: 30px 0;
+}
+
+.header a {
+  text-decoration: none;
+}
+.header button {
+  color: var(--white);
+  background-color: var(--green);
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 40px;
+  font-size: 24px;
+}
+.header button:hover {
+  background-color: var(--brown);
+}
+
+.benefits {
+  margin: 100px 10%;
+}
+
+.benefits .benefit-list {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.benefits .benefit-list .title {
+  color: var(--green);
+  margin-bottom: 20px;
+}
+
+.benefits .benefits1 {
+  width: 370px;
+}
+
+.benefits .discription {
+  color: var(--dark-brown-text);
+  font-size: var(--body-text-size);
+}
+
+.benefits .content {
+  padding: 20px;
+}
+
+.sale-up {
+  background-color: var(--yellow);
+  padding: 0 10%;
+}
+.sale-up .sale {
+  padding-top: 100px;
+  margin: 0 auto 20px;
+}
+
+.sale-up .thanksgiving {
+  margin-bottom: 50px;
+  font-family: var(--font-parisienne);
+  font-size: var(--font-size-53xl);
+  color: var(--brown);
+  text-align: center;
+}
+.sale-up .product {
+  width: 705px;
+  height: 545px;
+  margin: 30px 15px 60px;
+}
+
+.sale-up .collection-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sale-up .collection-list .infor {
+  width: 50%;
+  padding: 100px 70px;
+}
+
+.sale-up .collection-list .product {
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+.sale-up .collection-list .product1 {
+  background-image: url("./image/4459674-05 2.png");
+}
+.sale-up .collection-list .product2 {
+  background-image: url("./image/4459674-06 1.png");
+}
+.sale-up .collection-list .title {
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: var(--font-size-29xl);
+  font-weight: 700;
+}
+
+.sale-up .collection {
+  font-family: var(--font-parisienne);
+  font-size: var(--font-size-36xl);
+  color: var(--white);
+  margin-bottom: 40px;
+}
+
+.sale-up .buy button {
+  padding: 10px 30px;
+  text-transform: uppercase;
+  color: var(--brown);
+  background-color: var(--white);
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.sale-up .buy button:hover {
+  background-color: var(--brown);
+  color: var(--white);
+}
+
+.time {
+  background-image: url("./image/libby-penner-idCCZpDD7qQ-unsplash 1.png");
+  background-size: 60%;
+  background-position: left;
+  background-color: var(--orange);
+  height: 800px;
+}
+.time .content {
+  transform: translate(125%, 90px);
+  color: var(--dark-brown-text);
+}
+
+.product .price {
+  display: flex;
+  font-size: var(--title1-size);
+  justify-content: center;
+  margin: 10px 0 20px;
+}
+
+.product .price .old-price {
+  color: var(--font-size-xl);
+  text-decoration: line-through;
+  font-weight: 400;
+}
+
+.product .price .new-price {
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.time .content .title {
+  font-size: var(--title-size);
+  text-transform: none;
+  color: #fff;
+}
+
+.time .count-down {
+  display: flex;
+  justify-content: center;
+}
+
+.time .box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: capitalize;
+  margin: 100px;
+  background-color: var(--white);
+}
+
+.time .image img {
+  transform: rotate(-1.62deg);
+}
+
+.time .number {
+  font-weight: 700;
+  font-size: var(--font-size-21xl);
+  text-align: center;
+}
+
+.time .text {
+  font-size: var(--font-size-sm);
+}
+
+.day,
+.hour,
+.mins {
+  text-align: center;
+  margin-right: 40px;
+}
+
+.time .content button {
+  margin: 20px 25%;
+  font-size: var(--body-text-size);
+  border: 1px solid var(--brown);
+  background-color: var(--white);
+  width: 50%;
+  color: var(--brown);
+}
+.time .content button:hover {
+  background-color: var(--brown);
+  color: var(--white);
+}
+
+.trending-product {
+  color: var(--brown);
+  padding: 0 10%;
+  margin: 100px 0;
+}
+
+.trending-product .trending {
+  font-family: var(--font-parisienne);
+  font-size: var(--font-size-53xl);
+  text-transform: capitalize;
+}
+
+.trending-product .products {
+  font-weight: 700;
+  font-size: var(--title-size);
+  text-transform: uppercase;
+}
+
+.trending-product .product-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.trending-product .product {
+  width: 570px;
+  height: 720px;
+  margin: 70px 0 200px;
+  text-align: center;
+}
+
+.trending-product .product .image {
+  height: 720px;
+  margin-bottom: 30px;
+}
+.trending-product .product .name {
+  color: var(--dark-brown-text);
+}
+
+.trending-product .action {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 100px;
+}
+.trending-product button {
+  font-size: var(--body-text-size);
+  border: 1px solid var(--brown);
+  background-color: var(--white);
+  color: var(--brown);
+  padding: 10px 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.trending-product button:hover {
+  background-color: var(--brown);
+  color: var(--white);
+}
+.testimonials {
+  text-align: center;
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.testimonials .title {
+  padding-top: 50px;
+  text-align: center;
+  font-size: var(--font-size-53xl);
+  font-family: var(--font-parisienne);
+}
+
+.testimonials .review .content {
+  max-width: 40%;
+  margin: 0 30% 30px;
+  font-size: var(--body-text-size);
+  font-weight: 400;
+}
+
+.testimonials .review .name {
+  text-transform: uppercase;
+  margin: 15px 0 25px;
+  font-size: var(--body-text-size);
+  font-weight: 500;
+}
+
+.testimonials .review .ava img {
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+
+.testimonials .review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials .icon {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.blogs {
+  margin: 100px 10%;
+  color: var(--brown);
+}
+
+.blogs .our-latest {
+  font-weight: 700;
+  font-size: var(--title-size);
+}
+
+.blogs .blog-text {
+  font-family: var(--font-parisienne);
+  font-size: var(--title-size);
+  margin-bottom: 20px;
+}
+
+.blogs .blog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blogs .blog {
+  width: 370px;
+}
+
+.blogs .blog .content {
+  font-size: var(--font-size-xl);
+  color: var(--dark-brown-text);
+}
+
+.blogs .blog .title {
+  font-weight: 600;
+  margin: 30px 0 15px;
+}
+
+.blogs .blog .discription {
+  margin-bottom: 30px;
+}
+
+.blogs .blog .see-more {
+  padding: 10px 50px;
+  font-size: var(--body-text-size);
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 1px solid var(--brown);
+  color: var(--brown);
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.blogs .blog .see-more:hover {
+  color: var(--white);
+  background-color: var(--brown);
+}
+
+.promotion {
+  display: flex;
+  background-color: var(--orange);
+}
+
+.promotion .content {
+  padding: 100px 10%;
+  color: var(--white);
+}
+
+.promotion .promotion-text {
+  font-size: var(--title-size);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.promotion .content .title-your {
+  font-family: var(--font-parisienne);
+  font-size: var(--font-size-53xl);
+}
+
+.promotion .discription {
+  font-size: var(--body-text-size);
+  width: 60%;
+  margin: 50px 0;
+}
+
+.promotion .content button {
+  padding: 10px 50px;
+  font-size: var(--font-size-5xl);
+  border: none;
+  color: var(--brown);
+  background-color: var(--white);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.promotion .content button:hover {
+  color: var(--white);
+  background-color: var(--brown);
+}
+
+.promotion .image {
+  width: 50%;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    background-image: url("./image/4459674-08 2.png");
+    background-size: cover;
+    height: 1000px;
+  }
+}

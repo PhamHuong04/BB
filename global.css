@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  line-height: normal;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+:root {
+  /* fonts */
+  --body-text: Poppins;
+  --font-parisienne: Parisienne;
+
+  /* font sizes */
+  --body-text-size: 18px;
+  --font-size-xl: 20px;
+  --title-size: 64px;
+  --font-size-5xl: 24px;
+  --font-size-53xl: 72px;
+  --font-size-11xl: 30px;
+  --font-size-sm: 14px;
+  --font-size-21xl: 40px;
+  --font-size-29xl: 48px;
+  --font-size-36xl: 55px;
+
+  /* Colors */
+  --white: #fff;
+  --brown: #b36f36;
+  --dark-brown-text: #5b3909;
+  --orange: #eea045;
+  --color-silver: #c4c4c4;
+  --green: #757f5f;
+  --paragraph: #795b39;
+  --color-floralwhite: #fffbf0;
+}
