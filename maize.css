@@ -16,12 +16,15 @@
 .header .content .thanksgiving {
   font-family: var(--font-parisienne);
   font-size: 100px;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 .header .content .sale-off-season {
   font-size: var(--title-size);
   text-transform: uppercase;
   font-weight: 700;
+  margin-top: 0;
 }
 
 .header .content .subheading {
@@ -33,6 +36,7 @@
   text-decoration: none;
 }
 .header button {
+  margin-top: 30px;
   color: var(--white);
   background-color: var(--green);
   text-transform: uppercase;
@@ -74,7 +78,7 @@
 
 .sale-up {
   background-color: var(--yellow);
-  padding: 0 10%;
+  padding: 0;
 }
 .sale-up .sale {
   padding-top: 100px;
@@ -87,6 +91,7 @@
   font-size: var(--font-size-53xl);
   color: var(--brown);
   text-align: center;
+  font-weight: normal;
 }
 
 .sale-up .collection-list {
@@ -102,9 +107,9 @@
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
-  width: 705px;
-  height: 540px;
-  margin: 30px 15px 60px;
+  width: 900px;
+  height: 600px;
+  margin: 30px 0px 60px;
 }
 .sale-up .collection-list .product1 {
   background-image: url("./image/4459674-05 2.png");
@@ -117,16 +122,19 @@
   color: var(--white);
   font-size: var(--font-size-29xl);
   font-weight: 700;
+  margin: 0;
 }
 
 .sale-up .collection {
   font-family: var(--font-parisienne);
   font-size: var(--font-size-36xl);
   color: var(--white);
-  margin-bottom: 40px;
+  margin: 0;
+  font-weight: normal;
 }
 
 .sale-up .buy button {
+  margin-top: 30px;
   padding: 10px 30px;
   text-transform: uppercase;
   color: var(--brown);
@@ -148,10 +156,15 @@
   color: var(--dark-brown-text);
   background-color: var(--orange);
   padding: auto auto;
-  width: 100% ;
-  height: fit-content;
+  width: 100%;
+  height: 783px;
 }
 
+.product .name {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
 .product .price {
   display: flex;
   font-size: var(--title1-size);
@@ -232,12 +245,15 @@
   font-family: var(--font-parisienne);
   font-size: var(--font-size-53xl);
   text-transform: capitalize;
+  font-weight: normal;
+  margin: 0;
 }
 
 .trending-product .products {
   font-weight: 700;
   font-size: var(--title-size);
   text-transform: uppercase;
+  margin: 0;
 }
 
 .trending-product .product-list {
@@ -290,6 +306,7 @@
   text-align: center;
   font-size: var(--font-size-53xl);
   font-family: var(--font-parisienne);
+  font-weight: normal;
 }
 
 .testimonials .review .content {
@@ -330,12 +347,15 @@
 .blogs .our-latest {
   font-weight: 700;
   font-size: var(--title-size);
+  margin: 0;
 }
 
 .blogs .blog-text {
   font-family: var(--font-parisienne);
   font-size: var(--title-size);
   margin-bottom: 20px;
+  font-weight: normal;
+  margin-top: 0;
 }
 
 .blogs .blog-list {
@@ -380,23 +400,26 @@
 
 .promotion {
   display: flex;
-  background-color: var(--orange);
+  height: 706px;
 }
 
 .promotion .content {
   padding: 100px 10%;
   color: var(--white);
+  background-color: var(--orange);
 }
 
 .promotion .promotion-text {
   font-size: var(--title-size);
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .promotion .content .title-your {
   font-family: var(--font-parisienne);
   font-size: var(--font-size-53xl);
+  margin: 0;
 }
 
 .promotion .discription {
@@ -430,7 +453,6 @@
   }
   .header .content {
     width: 100%;
-    color: var(--brown);
     margin-left: 0;
     text-align: center;
   }
@@ -510,6 +532,7 @@
   }
   .time .content {
     padding: 20px;
+    height: fit-content;
   }
   .time .box {
     width: 100%;
@@ -610,6 +633,7 @@
   .promotion {
     flex-wrap: wrap;
     text-align: center;
+    height: fit-content;
   }
 
   .promotion .content {
@@ -634,10 +658,10 @@
     font-size: var(--body-text-size);
   }
   .promotion .image {
-    width:678px;
+    width: 678px;
   }
   .promotion .image img {
     width: 100%;
-    height: 500px;
+    height: 400px;
   }
 }
