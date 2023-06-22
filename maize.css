@@ -34,9 +34,7 @@
 
 .header a {
   text-decoration: none;
-}
-.header button {
-  margin-top: 30px;
+  margin-top: 60px;
   color: var(--white);
   background-color: var(--green);
   text-transform: uppercase;
@@ -44,7 +42,7 @@
   padding: 10px 40px;
   font-size: 24px;
 }
-.header button:hover {
+.header a:hover {
   background-color: var(--brown);
 }
 
@@ -129,12 +127,13 @@
   font-family: var(--font-parisienne);
   font-size: var(--font-size-36xl);
   color: var(--white);
-  margin: 0;
+  margin: 0 0 30px;
   font-weight: normal;
 }
 
-.sale-up .buy button {
-  margin-top: 30px;
+.sale-up a {
+  text-decoration: none;
+  margin-top: 60px;
   padding: 10px 30px;
   text-transform: uppercase;
   color: var(--brown);
@@ -144,7 +143,7 @@
   font-size: 24px;
 }
 
-.sale-up .buy button:hover {
+.sale-up a:hover {
   background-color: var(--brown);
   color: var(--white);
 }
@@ -200,7 +199,13 @@
   width: 60%;
 }
 
-.time .content .image img {
+.time .image-cover {
+  width: 100%;
+  object-fit: cover;
+  height: 783px;
+}
+
+.time .content img {
   transform: rotate(-1.62deg);
 }
 
@@ -282,16 +287,23 @@
   justify-content: space-between;
   margin: 30px 0 100px;
 }
-.trending-product button {
+.trending-product button, a {
+  text-decoration: none;
   font-size: var(--body-text-size);
   border: 1px solid var(--brown);
   background-color: var(--white);
   color: var(--brown);
-  padding: 10px 50px;
+  padding: 10px 0;
   text-transform: uppercase;
   cursor: pointer;
+  width: 200px;
 }
 .trending-product button:hover {
+  background-color: var(--brown);
+  color: var(--white);
+}
+
+.trending-product a:hover {
   background-color: var(--brown);
   color: var(--white);
 }
@@ -424,11 +436,11 @@
 
 .promotion .discription {
   font-size: var(--body-text-size);
-  width: 60%;
+  width: 80%;
   margin: 50px 0;
 }
 
-.promotion .content button {
+.promotion .content a {
   padding: 10px 50px;
   font-size: var(--font-size-5xl);
   border: none;
@@ -437,13 +449,14 @@
   cursor: pointer;
   text-transform: uppercase;
 }
-.promotion .content button:hover {
+.promotion .content a:hover {
   color: var(--white);
   background-color: var(--brown);
 }
 
 .promotion .image {
-  width: 50%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* For mobile phones: */
