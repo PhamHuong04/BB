@@ -1,15 +1,23 @@
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
 .header {
   background-image: url("./image/4459674-02 5.png");
   height: 900px;
   background-repeat: no-repeat;
-  position: relative;
   background-size: cover;
 }
-
+.header .container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
 .header .content {
-  transform: translate(0, 50%);
-  margin-left: 10%;
-  width: 40%;
+  width: 50%;
   color: var(--brown);
 }
 
@@ -34,25 +42,26 @@
 
 .header a {
   text-decoration: none;
-  margin-top: 60px;
   color: var(--white);
   background-color: var(--green);
   text-transform: uppercase;
   border: none;
   padding: 10px 40px;
   font-size: 24px;
+  display: inline-block;
+  margin-top: 30px;
 }
 .header a:hover {
   background-color: var(--brown);
 }
 
 .benefits {
-  margin: 100px 10%;
+  margin: 100px 0;
 }
 
 .benefits .benefit-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
 }
 
@@ -78,6 +87,10 @@
   background-color: var(--yellow);
   padding: 0;
 }
+
+.sale-up .container {
+  width: 100%;
+}
 .sale-up .sale {
   padding-top: 100px;
   margin: 0 auto 20px;
@@ -94,7 +107,7 @@
 
 .sale-up .collection-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .sale-up .collection-list .infor {
   width: 50%;
@@ -105,15 +118,16 @@
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
-  width: 900px;
-  height: 600px;
-  margin: 30px 0px 60px;
+  width: 705px;
+  height: 545px;
 }
 .sale-up .collection-list .product1 {
   background-image: url("./image/4459674-05 2.png");
+  margin: 30px 30px 60px 0;
 }
 .sale-up .collection-list .product2 {
   background-image: url("./image/4459674-06 1.png");
+  margin: 30px 0 60px;
 }
 .sale-up .collection-list .title {
   text-transform: uppercase;
@@ -242,8 +256,13 @@
 
 .trending-product {
   color: var(--brown);
-  padding: 0 10%;
   margin: 100px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .trending-product .trending {
@@ -262,9 +281,9 @@
 }
 
 .trending-product .product-list {
-  display: flex;
+  display: grid;
   justify-content: space-between;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .trending-product .product {
@@ -287,7 +306,8 @@
   justify-content: space-between;
   margin: 30px 0 100px;
 }
-.trending-product button, a {
+.trending-product button,
+.trending-product a {
   text-decoration: none;
   font-size: var(--body-text-size);
   border: 1px solid var(--brown);
@@ -323,7 +343,7 @@
 
 .testimonials .review .content {
   max-width: 40%;
-  margin: 0 30% 30px;
+  margin: 0 auto 30px;
   font-size: var(--body-text-size);
   font-weight: 400;
 }
@@ -335,7 +355,7 @@
   font-weight: 500;
 }
 
-.testimonials .review .ava img {
+.testimonials .review img {
   border-radius: 50%;
   margin-bottom: 50px;
 }
@@ -352,7 +372,7 @@
 }
 
 .blogs {
-  margin: 100px 10%;
+  margin: 100px 0;
   color: var(--brown);
 }
 
@@ -365,9 +385,8 @@
 .blogs .blog-text {
   font-family: var(--font-parisienne);
   font-size: var(--title-size);
-  margin-bottom: 20px;
   font-weight: normal;
-  margin-top: 0;
+  margin: 0;
 }
 
 .blogs .blog-list {
@@ -394,6 +413,10 @@
   margin-bottom: 30px;
 }
 
+.blogs .blog img {
+  width: 100%;
+}
+
 .blogs .blog .see-more {
   padding: 10px 50px;
   font-size: var(--body-text-size);
@@ -413,12 +436,19 @@
 .promotion {
   display: flex;
   height: 706px;
+  background-color: var(--orange);
+}
+
+.promotion .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .promotion .content {
-  padding: 100px 10%;
   color: var(--white);
-  background-color: var(--orange);
+  width: 585px;
 }
 
 .promotion .promotion-text {
@@ -455,19 +485,26 @@
 }
 
 .promotion .image {
-  width: 100%;
+  width: 50%;
   object-fit: cover;
 }
 
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
+  .container {
+    width: 346px;
+    margin: 0 auto;
+  }
   .header {
     background-image: url("./image/4459674-08 2.png");
   }
+  .header .container {
+    align-items: flex-start;
+  }
   .header .content {
     width: 100%;
-    margin-left: 0;
     text-align: center;
+    margin-top: 50px;
   }
   .header .content .thanksgiving {
     font-size: var(--font-size-29xl);
@@ -482,9 +519,10 @@
   }
   .header a {
     font-size: var(--body-text-size);
+    margin-top: 0px;
   }
   .benefits {
-    margin: 30px 20px;
+    margin: 30px auto;
   }
   .benefits .benefit-list {
     flex-wrap: wrap;
@@ -546,20 +584,39 @@
   }
   .time .image-cover {
     height: 247px;
-
   }
   .time .content {
     padding: 20px;
     height: fit-content;
+  }
+  .time .content img {
+    width: 60%;
   }
   .time .box {
     width: 100%;
     margin: auto;
   }
 
+  .time .box .infor .name,
+  .time .box .infor,
+  .time .box button {
+    font-size: 14px;
+  }
+  .time .count-down .number {
+    font-size: 24px;
+  }
+
+  .time .count-down .text {
+    font-size: 13px;
+  }
+
   .trending-product {
     padding: 0 auto;
-    margin: 50px 0;
+    margin: 50px auto;
+  }
+
+  .container .icon img {
+    width: 25px;
   }
   .trending-product .trending {
     font-size: var(--font-size-11xl);
@@ -569,11 +626,16 @@
     font-size: var(--font-size-5xl);
   }
   .trending-product .product {
-    width: 100%;
+    width: 165px;
     margin: 0;
     text-align: center;
     font-size: 14px;
     height: fit-content;
+  }
+
+  .trending-product .product .infor,
+  .trending-product .product .name {
+    font-size: 14px;
   }
 
   .trending-product .product .image {
@@ -581,20 +643,23 @@
     height: fit-content;
   }
   .trending-product .action {
-    margin: 30px 0 50px;
+    margin: 30px auto 50px;
   }
   .trending-product .product .image img {
     width: 100%;
   }
   .trending-product button {
     font-size: 12px;
-    padding: 10px 20px;
-    width: fit-content;
+    width: 78px;
+    height: 61px;
   }
   .trending-product a {
     font-size: 12px;
-    padding: 10px 20px;
-    width: fit-content;
+    width: 60px;
+    padding: auto;
+    padding-left: 9px;
+    padding-right: 9px;
+    display: inline-block;
   }
 
   .testimonials .title {
@@ -603,11 +668,18 @@
 
   .testimonials .review .content {
     font-size: var(--font-size-sm);
-    max-width: 100%;
-    margin: 10px 10% 30px;
+    max-width: 90%;
+    margin: 10px auto 30px;
   }
   .testimonials .author {
-    max-width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .testimonials .author img {
+    width: 100px;
+    margin: 0 auto;
   }
 
   .testimonials .review .name {
@@ -629,10 +701,6 @@
   .blogs .blog {
     width: 345px;
     margin-bottom: 30px;
-  }
-
-  .blogs .image {
-    width: 100%;
   }
 
   .blogs .blog .title {
@@ -661,7 +729,7 @@
   }
 
   .promotion .content {
-    padding: 50px 10px;
+    height: 278px;
   }
 
   .promotion .promotion-text {
@@ -670,11 +738,13 @@
 
   .promotion .content .title-your {
     font-size: var(--font-size-11xl);
+    margin-top: 30px;
   }
 
   .promotion .discription {
     font-size: var(--font-size-sm);
     width: 100%;
+    margin: 20px 0;
   }
 
   .promotion .content a {
@@ -683,5 +753,6 @@
   }
   .promotion .image {
     width: 100%;
+    height: 248px;
   }
 }
